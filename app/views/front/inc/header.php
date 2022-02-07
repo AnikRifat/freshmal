@@ -40,7 +40,7 @@
       </a>
     </div>
     <!-- backtotop end -->
-    <?php require APPROOT . '/views/inc/navbar.php'; ?>
+    <?php require APPROOT . '/views/front/inc/navbar.php'; ?>
 
 
     <main>

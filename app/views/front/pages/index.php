@@ -1,4 +1,4 @@
-<?php require APPROOT . '/views/inc/header.php'; ?>
+<?php require APPROOT . '/views/front/inc/header.php'; ?>
 <!-- hero start -->
 <section class="hero__area hero__style--2 pos-rel">
   <div class="slider__single hero__height d-flex align-items-center">
@@ -331,4 +331,4 @@
   </div>
 </section>
 <!-- offer end -->
-<?php require APPROOT . '/views/inc/footer.php'; ?>
+<?php require APPROOT . '/views/front/inc/footer.php'; ?>

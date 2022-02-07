@@ -1,4 +1,4 @@
-<?php require APPROOT . '/views/inc/header.php'; ?>
+<?php require APPROOT . '/views/front/inc/header.php'; ?>
 <section class="page__title--area pt-100 pb-100">
   <div class="container">
     <div class="row align-items-center mt-none-30">
@@ -18,4 +18,4 @@
     </div>
   </div>
 </section>
-<?php require APPROOT . '/views/inc/footer.php'; ?>
+<?php require APPROOT . '/views/front/inc/footer.php'; ?>

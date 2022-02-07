@@ -12,7 +12,7 @@ class Pages extends Controller
       'description' => 'Simple social network built on the TraversyMVC PHP framework'
     ];
 
-    $this->view('pages/index', $data);
+    $this->view('front/pages/index', $data);
   }
 
   public function about()
@@ -22,6 +22,6 @@ class Pages extends Controller
       'description' => 'App to share posts with other users'
     ];
 
-    $this->view('pages/about', $data);
+    $this->view('front/pages/about', $data);
   }
 }

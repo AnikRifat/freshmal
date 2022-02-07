@@ -21,6 +21,8 @@
                                         </li> -->
                  <li><a href="<?php echo URLROOT; ?>/pages/index">Home</a></li>
                  <li><a href="<?php echo URLROOT; ?>/pages/about">About</a></li>
+                 <li><a href="<?php echo URLROOT; ?>/users/login">login</a></li>
+                 <li><a href="<?php echo URLROOT; ?>/users/register">register</a></li>
 
                  <li><a href="#product">Product</a></li>
                </ul>
