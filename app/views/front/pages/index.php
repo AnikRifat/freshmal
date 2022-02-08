@@ -1,5 +1,14 @@
 <?php require APPROOT . '/views/front/inc/header.php'; ?>
 <!-- hero start -->
+<?php
+if (isset($data['login_seccess'])) {
+  if ($data['login_success']) {
+    echo "<div class='alert alert-success'>
+  <strong>" . $data['login_success'] . "</strong></div>";
+  }
+}
+// die(var_dump($_SESSION));
+?>
 <section class="hero__area hero__style--2 pos-rel">
   <div class="slider__single hero__height d-flex align-items-center">
     <div class="container">
@@ -332,3 +341,13 @@
 </section>
 <!-- offer end -->
 <?php require APPROOT . '/views/front/inc/footer.php'; ?>
+
+<!-- <script>
+  swal({
+    title: "Here's a title!",
+  });
+</script> -->
+<!-- <?php
+
+
+      ?> -->

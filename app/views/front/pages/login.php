@@ -9,15 +9,20 @@
                         <?php if (isset($data['login_error'])) {
                             echo '<div class="alert alert-danger">
                                 <strong>' . $data['login_error'] . '</strong>';
-                        } ?>
+                        } else if (isset($data['register_success'])) {
+                            echo '<div class="alert alert-success">
+                                <strong>' . $data['register_success'] . '</strong>';
+                        }
+
+                        ?>
                     </div>
 
                     <form action="<?php echo URLROOT; ?>/users/login" method="POST">
                         <div class="input__field">
-                            <input name="email" type="email" placeholder="Your Email">
+                            <input name="email" type="email" placeholder="Your Email" value="<?php echo $data['email']; ?>">
                         </div>
                         <div class="input__field">
-                            <input name="password" type="password" placeholder="Password">
+                            <input name="password" type="password" placeholder="Password" value="">
                         </div>
                         <button type="submit" class="thm_btn w-100">Login Now</button>
                         <div class="login__action ul_li_between mt-30">

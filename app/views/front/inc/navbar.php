@@ -21,8 +21,20 @@
                                         </li> -->
                  <li><a href="<?php echo URLROOT; ?>/pages/index">Home</a></li>
                  <li><a href="<?php echo URLROOT; ?>/pages/about">About</a></li>
-                 <li><a href="<?php echo URLROOT; ?>/users/login">login</a></li>
-                 <li><a href="<?php echo URLROOT; ?>/users/register">register</a></li>
+
+                 <?php
+                  // die(var_dump($_SESSION));
+                  session_start();
+                  // die(print_r($_SESSION));
+                  if (isset($_SESSION['user_id'])) : ?>
+
+                   <li><a href="<?php echo URLROOT; ?>/users/dashboard">Dashboard</a></li>
+                   <li><a href="<?php echo URLROOT; ?>/users/logout">Logout</a></li>
+
+                 <?php else : ?>
+                   <li><a href="<?php echo URLROOT; ?>/users/login">login</a></li>
+                   <li><a href="<?php echo URLROOT; ?>/users/register">register</a></li>
+                 <?php endif; ?>
 
                  <li><a href="#product">Product</a></li>
                </ul>

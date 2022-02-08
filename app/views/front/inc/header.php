@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/meanmenu.css">
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/jquery-ui.css">
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/odometer.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.0/dist/sweetalert2.all.js"> -->
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/main.css">
 
 </head>

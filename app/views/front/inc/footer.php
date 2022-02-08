@@ -124,6 +124,7 @@
   <!-- jquery include -->
   <script src="<?php echo URLROOT; ?>/assets/js/jquery-3.5.1.min.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/js/owl.carousel.min.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/js/slick.min.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/js/jquery.meanmenu.min.js"></script>
@@ -135,6 +136,7 @@
   <script src="<?php echo URLROOT; ?>/assets/js/jquery.appear.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/js/jquery.magnific-popup.min.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/js/main.js"></script>
+  <script src="<?php echo URLROOT; ?>/js/app.js"></script>
   </body>
 
 
