@@ -37,6 +37,19 @@ class User
             return false;
         }
     }
+    public function checkAdmin($email)
+    {
+        $this->db->query('SELECT * FROM users WHERE email = :email');;
+        $this->db->bind(':email', $email);
+        $row  = $this->db->single();
+        // die($row->role);
+        if ($row->role = 'admin') {
+            // die(print_r($row));
+            return true;
+        } else {
+            return false;
+        }
+    }
     public function register($data)
     {
         $this->db->query('INSERT INTO `users`(`name`, `email`, `password`) VALUES (:name,:email,:password)');

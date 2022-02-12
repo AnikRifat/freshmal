@@ -14,7 +14,14 @@ class Pages extends Controller
 
     $this->view('front/pages/index', $data);
   }
+  public function admin()
+  {
+    $data = [
+      'title' => 'Dashboard',
+    ];
 
+    $this->view('admin/pages/index', $data);
+  }
   public function about()
   {
     $data = [

@@ -9,8 +9,15 @@ class Users extends Controller
     }
     public function login()
     {
+
         if ($this->userLogStatus() == true) {
-            print_r('logind');
+            if ($this->userModel->checkAdmin($_SESSION['email'])) {
+                redirect('pages/admin');
+            } else {
+                redirect('pages/index');
+            }
+            // redirect('pages/index');
+            // die(print_r('logind'));
         } else {
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 // echo "proccessing";
@@ -28,12 +35,16 @@ class Users extends Controller
                     $this->view('front/pages/login', $data);
                 } else {
                     if ($this->userModel->findUserByEmail($data['email'])) {
-                        // $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
                         $loginMethod = $this->userModel->logAuth($data['email'], $data['password']);
                         if ($loginMethod) {
                             $this->createUserSession($loginMethod);
-                            // $data['login_success'] = 'Login Success!';
-                            // $this->view('front/pages/index', $data);
+                            $data['login_success'] = 'Login Success!';
+                            if ($this->userModel->checkAdmin($data['email'])) {
+                                // die($this->userModel->checkAdmin($data['email']));
+                                $this->view('admin/pages/index', $data);
+                            } else {
+                                $this->view('front/pages/index', $data);
+                            }
                         } else {
                             $data['login_error'] = 'Password not matched ' . $data['password'];
                             $this->view('front/pages/login', $data);
@@ -82,8 +93,10 @@ class Users extends Controller
                         $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
 
                         if ($this->userModel->register($data)) {
-                            $data['register_success'] = "Registerd!  Now Please Login";
-                            $this->view('front/pages/login', $data);
+                            flash('register_success', 'uou are login');
+                            redirect('front/login');
+                            // $data['register_success'] = "Registerd!  Now Please Login";
+                            // $this->view('front/pages/login', $data);
                         }
                     } else {
                         $data['register_error'] = 'Confirm Password Does not matched';
@@ -105,22 +118,13 @@ class Users extends Controller
 
     public function createUserSession($user)
     {
-
-        // die(print_r($user));
-        // die($user->id);
         $_SESSION['user_id'] = $user->id;
         $_SESSION['email'] = $user->email;
         $_SESSION['name'] = $user->name;
-        // $_SESSION['id'] = $user->id;
-        // die(print_r($_SESSION));
-        // die($_SESSION['user_id']);
-        redirect('pages/index');
-        // die($_SESSION);
     }
     public function userLogStatus()
     {
         if (isset($_SESSION['user_id'])) {
-            die(var_dump($_SESSION['user_id']));
             return true;
         } else {
             return false;
@@ -132,8 +136,6 @@ class Users extends Controller
         unset($_SESSION['email']);
         unset($_SESSION['name']);
         session_destroy();
-
-
         redirect('users/login');
     }
 }

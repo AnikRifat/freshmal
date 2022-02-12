@@ -15,7 +15,7 @@ if (isset($data['login_seccess'])) {
       <div class="row align-items-center mt-none-30">
         <div class="col-xl-5 col-lg-5">
           <div class="hero__img">
-            <img src="<?php echo URLROOT; ?>/assets/img/slider/img_03.png" alt="">
+            <img src="<?php echo URLROOT; ?>/assets/front/img/slider/img_03.png" alt="">
           </div>
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6 order-first">
@@ -67,37 +67,37 @@ if (isset($data['login_seccess'])) {
     <div class="category__active--3 owl-carousel slider__arrow slider__arrow--white text-center">
       <div class="category__single--3">
         <div class="cat__icon">
-          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/img/category/img_07.png" alt=""></a>
+          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/front/img/category/img_07.png" alt=""></a>
         </div>
         <h3 class="cat__title"><a href="#!">fresh meat</a></h3>
       </div>
       <div class="category__single--3">
         <div class="cat__icon">
-          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/img/category/img_08.png" alt=""></a>
+          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/front/img/category/img_08.png" alt=""></a>
         </div>
         <h3 class="cat__title"><a href="#!">Vegetable</a></h3>
       </div>
       <div class="category__single--3">
         <div class="cat__icon">
-          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/img/category/img_09.png" alt=""></a>
+          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/front/img/category/img_09.png" alt=""></a>
         </div>
         <h3 class="cat__title"><a href="#!">fruits</a></h3>
       </div>
       <div class="category__single--3">
         <div class="cat__icon">
-          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/img/category/img_10.png" alt=""></a>
+          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/front/img/category/img_10.png" alt=""></a>
         </div>
         <h3 class="cat__title"><a href="#!">Fish</a></h3>
       </div>
       <div class="category__single--3">
         <div class="cat__icon">
-          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/img/category/img_11.png" alt=""></a>
+          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/front/img/category/img_11.png" alt=""></a>
         </div>
         <h3 class="cat__title"><a href="#!">Peyaj TInar</a></h3>
       </div>
       <div class="category__single--3">
         <div class="cat__icon">
-          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/img/category/img_08.png" alt=""></a>
+          <a href="#!"><img src="<?php echo URLROOT; ?>/assets/front/img/category/img_08.png" alt=""></a>
         </div>
         <h3 class="cat__title"><a href="#!">Vegetable</a></h3>
       </div>
@@ -116,7 +116,7 @@ if (isset($data['login_seccess'])) {
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div class="product__single">
           <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/img/product/img_08.png" alt=""></a>
+            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_08.png" alt=""></a>
           </div>
           <div class="product__contact mt-25">
             <span class="product__cat">vegetable</span>
@@ -139,7 +139,7 @@ if (isset($data['login_seccess'])) {
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div class="product__single">
           <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/img/product/img_07.png" alt=""></a>
+            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_07.png" alt=""></a>
           </div>
           <div class="product__contact mt-25">
             <span class="product__cat">vegetable</span>
@@ -162,7 +162,7 @@ if (isset($data['login_seccess'])) {
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div class="product__single">
           <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/img/product/img_06.png" alt=""></a>
+            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_06.png" alt=""></a>
           </div>
           <div class="product__contact mt-25">
             <span class="product__cat">vegetable</span>
@@ -185,7 +185,7 @@ if (isset($data['login_seccess'])) {
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div class="product__single">
           <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/img/product/img_19.png" alt=""></a>
+            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_19.png" alt=""></a>
           </div>
           <div class="product__contact mt-25">
             <span class="product__cat">vegetable</span>
@@ -208,7 +208,7 @@ if (isset($data['login_seccess'])) {
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div class="product__single">
           <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/img/product/img_09.png" alt=""></a>
+            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_09.png" alt=""></a>
           </div>
           <div class="product__contact mt-25">
             <span class="product__cat">vegetable</span>
@@ -231,7 +231,7 @@ if (isset($data['login_seccess'])) {
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div class="product__single">
           <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/img/product/img_24.png" alt=""></a>
+            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_24.png" alt=""></a>
           </div>
           <div class="product__contact mt-25">
             <span class="product__cat">vegetable</span>
@@ -254,7 +254,7 @@ if (isset($data['login_seccess'])) {
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div class="product__single">
           <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/img/product/img_20.png" alt=""></a>
+            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_20.png" alt=""></a>
           </div>
           <div class="product__contact mt-25">
             <span class="product__cat">vegetable</span>
@@ -277,7 +277,7 @@ if (isset($data['login_seccess'])) {
       <div class="col-xl-3 col-lg-4 col-md-6">
         <div class="product__single">
           <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/img/product/img_05.png" alt=""></a>
+            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_05.png" alt=""></a>
           </div>
           <div class="product__contact mt-25">
             <span class="product__cat">vegetable</span>
@@ -317,7 +317,7 @@ if (isset($data['login_seccess'])) {
             </div>
           </div>
           <div class="offer__img">
-            <img src="<?php echo URLROOT; ?>/assets/img/offer/img_01.png" alt="">
+            <img src="<?php echo URLROOT; ?>/assets/front/img/offer/img_01.png" alt="">
           </div>
         </div>
       </div>
@@ -332,7 +332,7 @@ if (isset($data['login_seccess'])) {
             </div>
           </div>
           <div class="offer__img">
-            <img src="<?php echo URLROOT; ?>/assets/img/offer/img_02.png" alt="">
+            <img src="<?php echo URLROOT; ?>/assets/front/img/offer/img_02.png" alt="">
           </div>
         </div>
       </div>

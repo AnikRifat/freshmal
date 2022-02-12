@@ -12,21 +12,21 @@
 
   <title><?php echo SITENAME; ?> - <?php echo $data['title']; ?></title>
 
-  <link rel="shortcut icon" href="<?php echo URLROOT; ?>/assets/img/favicon.png" type="images/x-icon" />
+  <link rel="shortcut icon" href="<?php echo URLROOT; ?>/assets/front/img/favicon.png" type="images/x-icon" />
 
   <!-- css include -->
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/fontawesome.css">
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/animate.min.css">
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/slick.css">
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/nice-select.css">
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/magnific-popup.css">
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/meanmenu.css">
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/jquery-ui.css">
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/odometer.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/fontawesome.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/animate.min.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/slick.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/nice-select.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/magnific-popup.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/meanmenu.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/jquery-ui.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/odometer.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.0/dist/sweetalert2.all.js"> -->
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/css/main.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/front/css/main.css">
 
 </head>
 

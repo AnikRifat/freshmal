@@ -6,13 +6,7 @@
                 <div class="account__wrap text-center">
                     <div class="account__title">
                         <h3>Login</h3>
-                        <?php if (isset($data['login_error'])) {
-                            echo '<div class="alert alert-danger">
-                                <strong>' . $data['login_error'] . '</strong>';
-                        } else if (isset($data['register_success'])) {
-                            echo '<div class="alert alert-success">
-                                <strong>' . $data['register_success'] . '</strong>';
-                        }
+                        <?php flash('register_success');
 
                         ?>
                     </div>

@@ -4,7 +4,7 @@
        <div class="row align-items-center">
          <div class="col-xl-2 col-lg-2 col-6">
            <div class="logo">
-             <a href="index-2.html"><img src="<?php echo URLROOT; ?>/assets/img/logo/logo.png" alt=""></a>
+             <a href="index-2.html"><img src="<?php echo URLROOT; ?>/assets/front/img/logo/logo.png" alt=""></a>
            </div>
          </div>
          <div class="col-xl-6 col-lg-7 d-none d-lg-block">
@@ -21,22 +21,6 @@
                                         </li> -->
                  <li><a href="<?php echo URLROOT; ?>/pages/index">Home</a></li>
                  <li><a href="<?php echo URLROOT; ?>/pages/about">About</a></li>
-
-                 <?php
-                  // die(var_dump($_SESSION));
-                  session_start();
-                  // die(print_r($_SESSION));
-                  if (isset($_SESSION['user_id'])) : ?>
-
-                   <li><a href="<?php echo URLROOT; ?>/users/dashboard">Dashboard</a></li>
-                   <li><a href="<?php echo URLROOT; ?>/users/logout">Logout</a></li>
-
-                 <?php else : ?>
-                   <li><a href="<?php echo URLROOT; ?>/users/login">login</a></li>
-                   <li><a href="<?php echo URLROOT; ?>/users/register">register</a></li>
-                 <?php endif; ?>
-
-                 <li><a href="#product">Product</a></li>
                </ul>
              </nav>
            </div>
@@ -49,13 +33,62 @@
                  <i class="far fa-shopping-bag"></i>
                  <sup>8</sup>
                </button>
-               <a class="icon search_icon" href="#!">
-                 <i class="far fa-search"></i>
+               <a class="icon icon--wishlist" href="#!">
+                 <i class="far fa-heart"></i>
+                 <sup>4</sup>
                </a>
              </div>
-             <div class="header__btn">
-               <a class="thm_btn radius_btn" href="#!">Discover now</a>
+
+
+             <div class="header__profile--wrap">
+               <a class="header__profile ul_li" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                 <span>
+                   <?php if (isset($_SESSION['user_id'])) {
+                      echo $_SESSION['name'];
+                    } else {
+                      echo "Join!";
+                    }
+                    ?>
+                 </span>
+                 <div class="avatar__img">
+
+                   <img src="<?php echo URLROOT; ?>/assets/front/img/avatar/header_avatar.jpg" alt="">
+                 </div>
+                 <i class="fal fa-angle-down"></i>
+               </a>
+               <?php if (isset($_SESSION['user_id'])) : ?>
+                 <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
+                   <a href="login.html" class="dropdown-item notify-item">
+                     <i class="fe-user"></i>
+                     <span>Dashboard</span>
+                   </a>
+
+                   <div class="dropdown-divider"></div>
+                   <a href="<?php echo URLROOT; ?>/users/logout" class="dropdown-item notify-item">
+                     <i class="fe-log-out"></i>
+                     <span>Logout</span>
+                   </a>
+
+                 </div>
+               <?php else : ?>
+                 <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
+                   <a href="<?php echo URLROOT; ?>/users/login" class="dropdown-item notify-item">
+                     <i class="fe-user"></i>
+                     <span>Login</span>
+                   </a>
+
+                   <div class="dropdown-divider"></div>
+                   <a href="<?php echo URLROOT; ?>/users/register" class="dropdown-item notify-item">
+                     <i class="fe-log-out"></i>
+                     <span>Register</span>
+                   </a>
+
+                 </div>
+               <?php endif; ?>
              </div>
+
+
+
              <div class="side-mobile-menu">
                <button class="side-info-close"><i class="fal fa-times"></i></button>
                <div class="mobile-menu"></div>
@@ -78,7 +111,7 @@
          <div class="cart-bar__lists">
            <div class="cart-bar__item position-relative d-flex">
              <div class="thumb">
-               <img src="<?php echo URLROOT; ?>/assets/img/product/img_01.png" alt="image_not_found">
+               <img src="<?php echo URLROOT; ?>/assets/front/img/product/img_01.png" alt="image_not_found">
              </div>
              <div class="content">
                <h4 class="title">
@@ -90,7 +123,7 @@
            </div>
            <div class="cart-bar__item position-relative d-flex">
              <div class="thumb">
-               <img src="<?php echo URLROOT; ?>/assets/img/product/img_02.png" alt="image_not_found">
+               <img src="<?php echo URLROOT; ?>/assets/front/img/product/img_02.png" alt="image_not_found">
              </div>
              <div class="content">
                <h4 class="title">
@@ -102,7 +135,7 @@
            </div>
            <div class="cart-bar__item position-relative d-flex">
              <div class="thumb">
-               <img src="<?php echo URLROOT; ?>/assets/img/product/img_03.png" alt="image_not_found">
+               <img src="<?php echo URLROOT; ?>/assets/front/img/product/img_03.png" alt="image_not_found">
              </div>
              <div class="content">
                <h4 class="title">
@@ -114,7 +147,7 @@
            </div>
            <div class="cart-bar__item position-relative d-flex">
              <div class="thumb">
-               <img src="<?php echo URLROOT; ?>/assets/img/product/img_04.png" alt="image_not_found">
+               <img src="<?php echo URLROOT; ?>/assets/front/img/product/img_04.png" alt="image_not_found">
              </div>
              <div class="content">
                <h4 class="title">

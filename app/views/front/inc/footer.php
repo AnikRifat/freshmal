@@ -17,7 +17,7 @@
         <div class="row mt-none-20">
           <div class="col-lg-6 col-md-4 col-sm-5">
             <div class="logo mt-20">
-              <a href="index-2.html"><img src="<?php echo URLROOT; ?>/assets/img/logo/logo.png" alt=""></a>
+              <a href="index-2.html"><img src="<?php echo URLROOT; ?>/assets/front/img/logo/logo.png" alt=""></a>
             </div>
           </div>
           <div class="col-lg-6 col-md-8 col-sm-7">
@@ -110,7 +110,7 @@
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="payment__method text-center text-md-end mt-20">
-              <img src="<?php echo URLROOT; ?>/assets/img/icon/payment_method.png" alt="">
+              <img src="<?php echo URLROOT; ?>/assets/front/img/icon/payment_method.png" alt="">
             </div>
           </div>
         </div>
@@ -122,20 +122,20 @@
   </div>
 
   <!-- jquery include -->
-  <script src="<?php echo URLROOT; ?>/assets/js/jquery-3.5.1.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/jquery-3.5.1.min.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/owl.carousel.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/slick.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/jquery.meanmenu.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/isotope.pkgd.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/jquery.nice-select.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/odometer.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/countdown.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/jquery-ui.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/jquery.appear.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/jquery.magnific-popup.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/assets/js/main.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/owl.carousel.min.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/slick.min.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/jquery.meanmenu.min.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/isotope.pkgd.min.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/jquery.nice-select.min.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/odometer.min.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/countdown.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/jquery-ui.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/jquery.appear.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/jquery.magnific-popup.min.js"></script>
+  <script src="<?php echo URLROOT; ?>/assets/front/js/main.js"></script>
   <script src="<?php echo URLROOT; ?>/js/app.js"></script>
   </body>
 
