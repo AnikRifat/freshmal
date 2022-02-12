@@ -35,14 +35,64 @@
                 <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
 
-                <li class="nav-header">Users</li>
+                <!-- <li class="nav-header">Users Mana</li> -->
                 <li class="nav-item">
-                    <a href="pages/calendar.html" class="nav-link">
-                        <i class="nav-icon far fa-calendar-alt"></i>
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
                         <p>
                             User Management
+                            <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?php echo URLROOT; ?>/pages/addUser" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add User</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?php echo URLROOT; ?>/pages/viewUser" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>View User</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
+                        <p>
+                            Product Management
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?php echo URLROOT; ?>/pages/addProduct" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add Product</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?php echo URLROOT; ?>/pages/viewProduct" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>View Product</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?php echo URLROOT; ?>/pages/orderProduct" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Ordered Products</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?php echo URLROOT; ?>/pages/deliverProduct" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Delivered Product</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
             </ul>

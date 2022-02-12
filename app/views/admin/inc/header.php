@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/admin/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/admin/plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

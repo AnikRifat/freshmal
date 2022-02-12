@@ -4,6 +4,7 @@ class Pages extends Controller
   public function __construct()
   {
   }
+  //default routes....
 
   public function index()
   {
@@ -14,14 +15,7 @@ class Pages extends Controller
 
     $this->view('front/pages/index', $data);
   }
-  public function admin()
-  {
-    $data = [
-      'title' => 'Dashboard',
-    ];
 
-    $this->view('admin/pages/index', $data);
-  }
   public function about()
   {
     $data = [
@@ -31,4 +25,32 @@ class Pages extends Controller
 
     $this->view('front/pages/about', $data);
   }
+  //default routes....
+
+  //admin routes....
+  public function admin()
+  {
+    $data = [
+      'title' => 'Dashboard',
+    ];
+
+    $this->view('admin/pages/index', $data);
+  }
+  public function viewUser()
+  {
+
+    $data = [
+      'title' => 'User',
+    ];
+    $this->view('admin/pages/user/view_user', $data);
+  }
+  public function editUser()
+  {
+    $data = [
+      'title' => 'Edit User',
+    ];
+    $this->view('admin/pages/user/edit_user', $data);
+  }
+  //admin routes....
+
 }

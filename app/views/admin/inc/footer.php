@@ -13,6 +13,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
+
 <script src="<?php echo URLROOT; ?>/assets/admin/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="<?php echo URLROOT; ?>/assets/admin/plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -46,6 +47,8 @@
 <script src="<?php echo URLROOT; ?>/assets/admin/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?php echo URLROOT; ?>/assets/admin/js/pages/dashboard.js"></script>
+<script src="<?php echo URLROOT; ?>/js/app.js"></script>
+
 </body>
 
 </html>

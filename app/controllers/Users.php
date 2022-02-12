@@ -138,6 +138,16 @@ class Users extends Controller
         session_destroy();
         redirect('users/login');
     }
+    public function dltUser()
+    {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            // die('submitted');
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+            $data = [
+                'id' => trim($_POST['id'])
+            ];
+        }
+    }
 }
 
 ?>
