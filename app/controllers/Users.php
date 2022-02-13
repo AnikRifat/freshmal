@@ -12,9 +12,11 @@ class Users extends Controller
 
         if ($this->userLogStatus() == true) {
             if ($this->userModel->checkAdmin($_SESSION['email'])) {
+                // $this->view('admin/pages/index');
                 redirect('pages/admin');
             } else {
                 redirect('pages/index');
+                // $this->view('front/pages/index');
             }
             // redirect('pages/index');
             // die(print_r('logind'));
@@ -39,11 +41,13 @@ class Users extends Controller
                         if ($loginMethod) {
                             $this->createUserSession($loginMethod);
                             $data['login_success'] = 'Login Success!';
-                            if ($this->userModel->checkAdmin($data['email'])) {
+                            if ($this->userModel->checkAdmin($data['email']) == false) {
+                                redirect('pages/admin');
                                 // die($this->userModel->checkAdmin($data['email']));
-                                $this->view('admin/pages/index', $data);
+                                // $this->view('admin/pages/index', $data);
                             } else {
-                                $this->view('front/pages/index', $data);
+                                redirect('pages/index');
+                                // $this->view('front/pages/index', $data);
                             }
                         } else {
                             $data['login_error'] = 'Password not matched ' . $data['password'];

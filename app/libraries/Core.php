@@ -16,8 +16,8 @@ class Core
 
     $url = $this->getUrl();
 
-// var_dump($url);
-// die();
+    // var_dump($url);
+    // die();
 
     // Look in controllers for first value
     if ($url !== null && file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {

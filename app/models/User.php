@@ -61,10 +61,11 @@ class User
         $this->db->bind(':email', $email);
         $row  = $this->db->single();
         // die($row->role);
-        if ($row->role = 'admin') {
+        if ($row->role = "admin") {
             // die(print_r($row));
             return true;
         } else {
+            die(print_r($row));
             return false;
         }
     }
