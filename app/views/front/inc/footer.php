@@ -135,9 +135,17 @@
   <script src="<?php echo URLROOT; ?>/assets/front/js/jquery-ui.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/front/js/jquery.appear.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/front/js/jquery.magnific-popup.min.js"></script>
+  <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/front/js/main.js"></script>
   <script src="<?php echo URLROOT; ?>/js/app.js"></script>
-  
+  <script>
+
+
+
+    function ok(data) {
+      console.log('<?php echo $data['title']; ?>-page');
+    }
+  </script>
   </body>
 
 

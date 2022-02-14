@@ -107,64 +107,17 @@
          <a class="d-flex align-items-center justify-content-center" href="javascript:void(0);"><i class="fal fa-times"></i></a>
        </div>
        <div class="cart-bar">
-         <h4 class="cart-bar__title">Cart Items - <span>4</span></h4>
-         <div class="cart-bar__lists">
-           <div class="cart-bar__item position-relative d-flex">
-             <div class="thumb">
-               <img src="<?php echo URLROOT; ?>/assets/front/img/product/img_01.png" alt="image_not_found">
-             </div>
-             <div class="content">
-               <h4 class="title">
-                 <a href="#0">Rorem ipsum dolor sit amet.</a>
-               </h4>
-               <span class="price">$19.00</span>
-               <a href="#0" class="remove"><i class="fal fa-times"></i></a>
-             </div>
-           </div>
-           <div class="cart-bar__item position-relative d-flex">
-             <div class="thumb">
-               <img src="<?php echo URLROOT; ?>/assets/front/img/product/img_02.png" alt="image_not_found">
-             </div>
-             <div class="content">
-               <h4 class="title">
-                 <a href="#0">Rorem ipsum dolor sit amet.</a>
-               </h4>
-               <span class="price">$36.00</span>
-               <a href="#0" class="remove"><i class="fal fa-times"></i></a>
-             </div>
-           </div>
-           <div class="cart-bar__item position-relative d-flex">
-             <div class="thumb">
-               <img src="<?php echo URLROOT; ?>/assets/front/img/product/img_03.png" alt="image_not_found">
-             </div>
-             <div class="content">
-               <h4 class="title">
-                 <a href="#0">Rorem ipsum dolor sit amet.</a>
-               </h4>
-               <span class="price">$20.00</span>
-               <a href="#0" class="remove"><i class="fal fa-times"></i></a>
-             </div>
-           </div>
-           <div class="cart-bar__item position-relative d-flex">
-             <div class="thumb">
-               <img src="<?php echo URLROOT; ?>/assets/front/img/product/img_04.png" alt="image_not_found">
-             </div>
-             <div class="content">
-               <h4 class="title">
-                 <a href="#0">Rorem ipsum dolor sit amet.</a>
-               </h4>
-               <span class="price">$20.00</span>
-               <a href="#0" class="remove"><i class="fal fa-times"></i></a>
-             </div>
-           </div>
+         <h4 class="cart-bar__title">Shopping Bag</span></h4>
+         <div class="cart cart-bar__lists">
+
+
          </div>
          <div class="cart-bar__subtotal d-flex align-items-center justify-content-between">
            <span>Sub Total:</span>
-           <span>$87.00</span>
+           <span class="total"></span>
          </div>
          <div class="btns d-flex align-items-center justify-content-center">
-           <a href="cart.html" class="thm_btn radius_btn">View Cart</a>
-           <a href="checkout.html" class="thm_btn thm_btn-2 radius_btn">Checkout</a>
+           <a href="checkout.html" class="thm_btn btn-block thm_btn-2 radius_btn">Checkout</a>
          </div>
        </div>
      </aside>

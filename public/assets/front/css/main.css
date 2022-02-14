@@ -2093,12 +2093,15 @@ h6 {
     color: #000; }
 .cart-bar__item .thumb {
   background: #ffffff;
-  min-width: 70px; }
+  min-width: 30%;
+  }
   .cart-bar__item .thumb img {
     max-width: 60px; }
 .cart-bar__item .content {
   padding-right: 25px;
-  position: relative; }
+  position: relative;
+  min-width: 70%;
+  }
   .cart-bar__item .content .title {
     font-size: 14px;
     font-weight: 500;

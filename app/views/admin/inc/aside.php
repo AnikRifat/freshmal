@@ -59,6 +59,7 @@
                         </li>
                     </ul>
                 </li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tree"></i>
@@ -94,7 +95,15 @@
                         </li>
                     </ul>
                 </li>
-
+                <li class="nav-item">
+                    <a href=" <?php echo URLROOT; ?>/users/logout" class="nav-link">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                        <p>
+                            log Out
+                            <i class="fas fa-angle-right right"></i>
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
