@@ -1,61 +1,24 @@
 <?php
 
-class User
+class Product
 {
     private $db;
     public function __construct()
     {
         $this->db = new Database;
     }
-
-    public function logAuth($email, $password)
+    public function addProduct($data)
     {
-        $this->db->query('SELECT * FROM users WHERE email = :email');;
-        $this->db->bind(':email', $email);
-        $row  = $this->db->single();
-        // die($row);
-        $hashed_password = $row->password;
-        // $password = password_hash($password, PASSWORD_DEFAULT);
-        if (password_verify($password, $hashed_password)) {
-            // die($email . ' true=> ' . $password . ' = ' . $hashed_password);
 
-            return $row;
-        } else {
-            // die($email . ' => ' . $password . ' = ' . $hashed_password);
-            return false;
-        }
-    }
-    public function findUserbyEmail($email)
-    {
-        $this->db->query('SELECT * FROM users WHERE email = :email');;
-        $this->db->bind(':email', $email);
-        $row  = $this->db->single();
+        // die(print_r($data));
 
-        if ($this->db->rowCount() > 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    public function findUserByID($id)
-    {
-        $this->db->query('SELECT * FROM users WHERE id = :id');;
-        $this->db->bind(':id', $id);
-        $row  = $this->db->single();
+        $this->db->query('INSERT INTO products (product_id, title, price, unit, image) VALUES (:product_id, :title, :price, :unit, :image)');
+        $this->db->bind(':product_id', $data['pid']);
+        $this->db->bind(':title', $data['title']);
+        $this->db->bind(':price', $data['price']);
+        $this->db->bind(':unit', $data['unit']);
+        $this->db->bind(':image', $data['image']);
 
-        if ($this->db->rowCount() > 0) {
-            return $row;
-        } else {
-            return false;
-        }
-    }
-
-    public function register($data)
-    {
-        $this->db->query('INSERT INTO `users`(`name`, `email`, `password`) VALUES (:name,:email,:password)');
-        $this->db->bind(':name', $data['name']);
-        $this->db->bind(':email', $data['email']);
-        $this->db->bind(':password', $data['password']);
 
         if ($this->db->execute()) {
             return true;
@@ -66,9 +29,9 @@ class User
 
 
     //admin
-    public function userList()
+    public function productList()
     {
-        $this->db->query('SELECT * FROM users WHERE status = 1');
+        $this->db->query('SELECT * FROM products WHERE status = 1');
         // $this->db->bind(':email', $email);
         $row  = $this->db->resultSet();
 

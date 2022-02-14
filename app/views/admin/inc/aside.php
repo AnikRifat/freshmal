@@ -52,7 +52,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo URLROOT; ?>/pages/viewUser" class="nav-link">
+                            <a href="<?php echo URLROOT; ?>/users/viewUser" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>View User</p>
                             </a>
@@ -69,13 +69,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?php echo URLROOT; ?>/pages/addProduct" class="nav-link">
+                            <a href="<?php echo URLROOT; ?>/pages/addProductPage" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Product</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo URLROOT; ?>/pages/viewProduct" class="nav-link">
+                            <a href="<?php echo URLROOT; ?>/pages/viewProductPage" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>View Product</p>
                             </a>

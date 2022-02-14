@@ -110,193 +110,37 @@ if (isset($data['login_seccess'])) {
 <section class="product__area pt-60 pb-60">
   <div class="container">
     <div class="sec__title mb-25">
-      <h2 class="title">best seller</h2>
+      <h2 class="title">Our Products</h2>
     </div>
     <div class="row g-0 justify-content-center">
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="product__single">
-          <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_08.png" alt=""></a>
-          </div>
-          <div class="product__contact mt-25">
-            <span class="product__cat">vegetable</span>
-            <h3 class="product__title"><a href="shop-details.html">Chinise- Nuisen napa</a>
-            </h3>
-            <h5 class="product__price">$9.00/ <span>kg</span></h5>
-          </div>
-          <div class="product__bottom ul_li_between mt-15">
-            <a class="details__btn" href="#!">Details</a>
-            <div class="ps__btns">
-              <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a>
-              <a class="ps__btn ps__btn--shopping" href="#!"><i class="far fa-shopping-basket"></i></a>
+
+
+      <?php foreach ($data['products'] as $product) : ?>
+
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="product__single">
+            <div class="product__img">
+              <a href="shop-details.html"><img class="img-fluid" src="<?php echo $product->image ?>" alt=""></a>
             </div>
-          </div>
-          <div class="product__badge">
+            <div class="product__contact mt-25">
+              <h3 class="product__title"><a href="#"><?php echo $product->title ?></a>
+              </h3>
+              <h5 class="product__price"><?php echo $product->price ?>৳/ <span><?php echo $product->unit ?></span></h5>
+            </div>
+            <div class="product__bottom ul_li_between mt-15">
+              <button  class="addCart">Cart</button>
+              <div class="ps__btns">
+                <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a>
+                <a class="ps__btn ps__btn--shopping" href="#!"><i class="far fa-shopping-basket"></i></a>
+              </div>
+            </div>
+            <!-- <div class="product__badge">
             <span>-20</span>
+          </div> -->
           </div>
         </div>
-      </div>
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="product__single">
-          <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_07.png" alt=""></a>
-          </div>
-          <div class="product__contact mt-25">
-            <span class="product__cat">vegetable</span>
-            <h3 class="product__title"><a href="shop-details.html">Chinise- Nuisen napa</a>
-            </h3>
-            <h5 class="product__price">$9.00/ <span>kg</span></h5>
-          </div>
-          <div class="product__bottom ul_li_between mt-15">
-            <a class="details__btn" href="#!">Details</a>
-            <div class="ps__btns">
-              <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a>
-              <a class="ps__btn ps__btn--shopping" href="#!"><i class="far fa-shopping-basket"></i></a>
-            </div>
-          </div>
-          <div class="product__badge">
-            <span>-20</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="product__single">
-          <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_06.png" alt=""></a>
-          </div>
-          <div class="product__contact mt-25">
-            <span class="product__cat">vegetable</span>
-            <h3 class="product__title"><a href="shop-details.html">Chinise- Nuisen napa</a>
-            </h3>
-            <h5 class="product__price">$9.00/ <span>kg</span></h5>
-          </div>
-          <div class="product__bottom ul_li_between mt-15">
-            <a class="details__btn" href="#!">Details</a>
-            <div class="ps__btns">
-              <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a>
-              <a class="ps__btn ps__btn--shopping" href="#!"><i class="far fa-shopping-basket"></i></a>
-            </div>
-          </div>
-          <div class="product__badge">
-            <span>-20</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="product__single">
-          <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_19.png" alt=""></a>
-          </div>
-          <div class="product__contact mt-25">
-            <span class="product__cat">vegetable</span>
-            <h3 class="product__title"><a href="shop-details.html">Chinise- Nuisen napa</a>
-            </h3>
-            <h5 class="product__price">$9.00/ <span>kg</span></h5>
-          </div>
-          <div class="product__bottom ul_li_between mt-15">
-            <a class="details__btn" href="#!">Details</a>
-            <div class="ps__btns">
-              <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a>
-              <a class="ps__btn ps__btn--shopping" href="#!"><i class="far fa-shopping-basket"></i></a>
-            </div>
-          </div>
-          <div class="product__badge">
-            <span>-20</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="product__single">
-          <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_09.png" alt=""></a>
-          </div>
-          <div class="product__contact mt-25">
-            <span class="product__cat">vegetable</span>
-            <h3 class="product__title"><a href="shop-details.html">Chinise- Nuisen napa</a>
-            </h3>
-            <h5 class="product__price">$9.00/ <span>kg</span></h5>
-          </div>
-          <div class="product__bottom ul_li_between mt-15">
-            <a class="details__btn" href="#!">Details</a>
-            <div class="ps__btns">
-              <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a>
-              <a class="ps__btn ps__btn--shopping" href="#!"><i class="far fa-shopping-basket"></i></a>
-            </div>
-          </div>
-          <div class="product__badge">
-            <span>-20</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="product__single">
-          <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_24.png" alt=""></a>
-          </div>
-          <div class="product__contact mt-25">
-            <span class="product__cat">vegetable</span>
-            <h3 class="product__title"><a href="shop-details.html">Chinise- Nuisen napa</a>
-            </h3>
-            <h5 class="product__price">$9.00/ <span>kg</span></h5>
-          </div>
-          <div class="product__bottom ul_li_between mt-15">
-            <a class="details__btn" href="#!">Details</a>
-            <div class="ps__btns">
-              <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a>
-              <a class="ps__btn ps__btn--shopping" href="#!"><i class="far fa-shopping-basket"></i></a>
-            </div>
-          </div>
-          <div class="product__badge">
-            <span>-20</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="product__single">
-          <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_20.png" alt=""></a>
-          </div>
-          <div class="product__contact mt-25">
-            <span class="product__cat">vegetable</span>
-            <h3 class="product__title"><a href="shop-details.html">Chinise- Nuisen napa</a>
-            </h3>
-            <h5 class="product__price">$9.00/ <span>kg</span></h5>
-          </div>
-          <div class="product__bottom ul_li_between mt-15">
-            <a class="details__btn" href="#!">Details</a>
-            <div class="ps__btns">
-              <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a>
-              <a class="ps__btn ps__btn--shopping" href="#!"><i class="far fa-shopping-basket"></i></a>
-            </div>
-          </div>
-          <div class="product__badge">
-            <span>-20</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="product__single">
-          <div class="product__img">
-            <a href="shop-details.html"><img src="<?php echo URLROOT; ?>/assets/front/img/product/img_05.png" alt=""></a>
-          </div>
-          <div class="product__contact mt-25">
-            <span class="product__cat">vegetable</span>
-            <h3 class="product__title"><a href="shop-details.html">Chinise- Nuisen napa</a>
-            </h3>
-            <h5 class="product__price">$9.00/ <span>kg</span></h5>
-          </div>
-          <div class="product__bottom ul_li_between mt-15">
-            <a class="details__btn" href="#!">Details</a>
-            <div class="ps__btns">
-              <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a>
-              <a class="ps__btn ps__btn--shopping" href="#!"><i class="far fa-shopping-basket"></i></a>
-            </div>
-          </div>
-          <div class="product__badge">
-            <span>-20</span>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
@@ -341,13 +185,3 @@ if (isset($data['login_seccess'])) {
 </section>
 <!-- offer end -->
 <?php require APPROOT . '/views/front/inc/footer.php'; ?>
-
-<!-- <script>
-  swal({
-    title: "Here's a title!",
-  });
-</script> -->
-<!-- <?php
-
-
-      ?> -->

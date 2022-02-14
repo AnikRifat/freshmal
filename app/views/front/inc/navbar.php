@@ -19,7 +19,7 @@
                                                 <li class="active"><a href="home-3.html">Home 03</a></li>
                                             </ul>
                                         </li> -->
-                 <li><a href="<?php echo URLROOT; ?>/pages/index">Home</a></li>
+                 <li><a href="<?php echo URLROOT; ?>/pages/home">Home</a></li>
                  <li><a href="<?php echo URLROOT; ?>/pages/about">About</a></li>
                </ul>
              </nav>

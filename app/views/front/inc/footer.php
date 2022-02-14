@@ -137,6 +137,7 @@
   <script src="<?php echo URLROOT; ?>/assets/front/js/jquery.magnific-popup.min.js"></script>
   <script src="<?php echo URLROOT; ?>/assets/front/js/main.js"></script>
   <script src="<?php echo URLROOT; ?>/js/app.js"></script>
+  
   </body>
 
 

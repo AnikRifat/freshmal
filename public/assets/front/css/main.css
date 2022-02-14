@@ -2667,7 +2667,9 @@ h6 {
   background: #ffffff;
   position: relative; }
   .product__single .product__img {
-    text-align: center; }
+    text-align: center;
+    height: 15rem;
+    }
     .product__single .product__img img {
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
