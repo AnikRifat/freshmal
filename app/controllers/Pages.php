@@ -5,8 +5,18 @@ class Pages extends Controller
   {
     $this->usersModel = $this->model('User');
     $this->productsModel = $this->model('Product');
-    // $userFun = $this->usersModel;
   }
+
+
+  ///api routes
+
+  public function userapi()
+  {
+    redirect('Api_controller/userInfo');
+  }
+
+
+
   //default routes....
 
   public function index()
@@ -23,7 +33,6 @@ class Pages extends Controller
     } else {
       redirect('pages/home');
     }
-    // $this->view('front/pages/index', $data);
   }
   public function home()
   {

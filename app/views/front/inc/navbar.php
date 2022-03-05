@@ -108,7 +108,7 @@
        </div>
        <div class="cart-bar">
          <h4 class="cart-bar__title">Shopping Bag</span></h4>
-         <div class="cart cart-bar__lists">
+         <div class="cart cart-bar__lists cart-view" id="cart-view">
 
 
          </div>

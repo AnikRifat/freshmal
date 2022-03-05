@@ -133,7 +133,7 @@ if (isset($data['login_seccess'])) {
               <div class="ps__btns">
                 <!-- <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a> -->
                 <div class="btnview_">
-                  <button class="btn btn-success border-0 " onClick="cartLS.add({id: <?php echo $product->id; ?>, name: '<?php echo $product->title; ?>', price: <?php echo $product->price; ?>,unit:'<?php echo $product->unit; ?>',image:'<?php echo $product->image; ?>'})">
+                  <button class="btn btn-success border-0 " onClick="addToCart({id: <?php echo $product->id; ?>, name: '<?php echo $product->title; ?>', price: <?php echo $product->price; ?>,unit:'<?php echo $product->unit; ?>',quantity:1,image:'<?php echo $product->image; ?>'})">
                     <div class="changebtn">
                       <i class="far fa-shopping-basket"></i>
                     </div>
