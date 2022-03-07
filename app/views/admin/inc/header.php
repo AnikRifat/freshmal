@@ -28,6 +28,14 @@
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/assets/admin/plugins/summernote/summernote-bs4.min.css">
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css">
 </head>
+<?php
+if (isset($data['msg'])) {
+  echo '<div class="alert alert-success">
+  <strong>' . $data['msg'] . '</strong>
+</div>';
+}
+
+?>
 
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">

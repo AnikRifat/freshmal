@@ -39,7 +39,7 @@
 
                                         <button type="submit" class="btn btn-info"><i class="fas fa-edit"></i></button>
                                     </form>
-                                    <form action="<?php echo URLROOT; ?>/users/dltUser" method="POST">
+                                    <form action="<?php echo URLROOT; ?>/Users_controller/dltUser" method="POST">
                                         <input type="text" hidden name="id" value="<?php echo $user->id; ?>">
                                         <a type="button" data-toggle="modal" data-target="#dltUserModel" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                                         <!-- /.modal-Start -->

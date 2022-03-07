@@ -123,25 +123,39 @@ if (isset($data['login_seccess'])) {
             <div class="product__img">
               <a href="shop-details.html"><img class="img-fluid" src="<?php echo $product->image; ?>" alt=""></a>
             </div>
-            <div class="product__contact mt-25">
-              <h3 class="product__title"><a href="#"><?php echo $product->title; ?></a>
-              </h3>
+
+
+            <div class="product__contact mt-35">
+              <h3 class="product__title"><a href="shop-details.html"><?php echo $product->title; ?></a></h3>
               <h5 class="product__price"><?php echo $product->price; ?>৳/ <span><?php echo $product->unit; ?></span></h5>
-            </div>
-            <div class="product__bottom ul_li_between mt-15">
-              <button class="addCart">Cart</button>
-              <div class="ps__btns">
-                <!-- <a class="ps__btn ps__btn--heart" href="#!"><i class="far fa-heart"></i></a> -->
-                <div class="btnview_">
-                  <button class="btn btn-success border-0 " onClick="addToCart({id: <?php echo $product->id; ?>, name: '<?php echo $product->title; ?>', price: <?php echo $product->price; ?>,unit:'<?php echo $product->unit; ?>',quantity:1,image:'<?php echo $product->image; ?>'})">
-                    <div class="changebtn">
-                      <i class="far fa-shopping-basket"></i>
+
+              <div class="justify-content-between d-flex">
+                <div>
+                  <div class="product__bottom ul_li_between hideEL cartPM_<?php echo $product->id; ?>">
+                    <div class="cart__plus--minus">
+                      <div class="qtybutton dec" onclick="dltData(<?php echo $product->id; ?>)">-</div>
+                      <input class="cart__plus--minus--box" type="text" id="cartValue_<?php echo $product->id; ?>" name="qtybutton" value="1" readonly>
+                      <div class="qtybutton inc" onclick="addData(<?php echo $product->id; ?>)">+</div>
                     </div>
-                  </button>
+                  </div>
+                  <div class="cart__btn mt-1 cartBtn_<?php echo $product->id; ?>">
+                    <button class="btn btn-success rounded-0" onClick="addToCart({id: <?php echo $product->id; ?>, name: '<?php echo $product->title; ?>', price: <?php echo $product->price; ?>,unit:'<?php echo $product->unit; ?>',quantity:1,image:'<?php echo $product->image; ?>'})">
+                      <i class="far fa-shopping-basket"></i>
+                    </button>
+                  </div>
                 </div>
-                <div class="id_<?php echo $product->id; ?> d-none">my-view</div>
+                <div>
+                  <div class="cart__btn mt-1">
+                    <button class="btn btn-warning rounded-0">
+                      <i class="far fa-info"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
+
+
+
 
             <!-- <div class="product__badge">
             <span>-20</span>

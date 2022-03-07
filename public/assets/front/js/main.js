@@ -361,24 +361,24 @@
 	});
 
 	// shop cart start
-	var CartPlusMinus = $('.cart__plus--minus');
-	CartPlusMinus.prepend('<div class="qtybutton dec">-</div>');
-	CartPlusMinus.append('<div class="qtybutton inc">+</div>');
-	$(".qtybutton").on("click", function () {
-		var $button = $(this);
-		var oldValue = $button.parent().find("input").val();
-		if ($button.text() === "+") {
-		var newVal = parseFloat(oldValue) + 1;
-		} else {
-		// Don't allow decrementing below zero
-		if (oldValue > 1) {
-			var newVal = parseFloat(oldValue) - 1;
-		} else {
-			newVal = 1;
-		}
-		}
-		$button.parent().find("input").val(newVal);
-	});
+	// var CartPlusMinus = $('.cart__plus--minus');
+	// CartPlusMinus.prepend('<div class="qtybutton dec">-</div>');
+	// CartPlusMinus.append('<div class="qtybutton inc">+</div>');
+	// $(".qtybutton").on("click", function () {
+	// 	var $button = $(this);
+	// 	var oldValue = $button.parent().find("input").val();
+	// 	if ($button.text() === "+") {
+	// 	var newVal = parseFloat(oldValue) + 1;
+	// 	} else {
+	// 	// Don't allow decrementing below zero
+	// 	if (oldValue > 1) {
+	// 		var newVal = parseFloat(oldValue) - 1;
+	// 	} else {
+	// 		newVal = 1;
+	// 	}
+	// 	}
+	// 	$button.parent().find("input").val(newVal);
+	// });
 	// shop cart end
 
 	/* magnificPopup img view */

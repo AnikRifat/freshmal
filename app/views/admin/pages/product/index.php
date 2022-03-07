@@ -27,9 +27,10 @@
 
                 <tbody>
                     <?php foreach ($data['products'] as $product) : ?>
+                        <?php $productID =  $product->id ?>
                         <tr>
                             <td> <?php echo ++$data['counter']; ?></td>
-                            <td><?php echo $product->id; ?>
+                            <td><?php echo $productID; ?>
                             <td><?php echo $product->product_id; ?>
                             </td>
                             <td><?php echo $product->title; ?>
@@ -40,15 +41,15 @@
                             <td>
                                 <div class="btn-group btn-group-sm">
                                     <form action="<?php echo URLROOT; ?>/pages/editProductPage" method="POST">
-                                        <input type="text" hidden name="id" value="<?php echo $product->id; ?>">
+                                        <input type="text" hidden name="id" value="<?php echo $productID; ?>">
 
                                         <button type="submit" class="btn btn-info"><i class="fas fa-edit"></i></button>
                                     </form>
-                                    <form action="<?php echo URLROOT; ?>/produtcs/dltProduct" method="POST">
-                                        <input type="text" hidden name="id" value="<?php echo $product->id; ?>">
-                                        <a type="button" data-toggle="modal" data-target="#dltUserModel" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                                    <form action="<?php echo URLROOT; ?>/products_controller/dltProduct" method="POST">
+                                        <input type="text" hidden name="idF" value="<?php echo $productID; ?>">
+                                        <a type="button" data-toggle="modal" data-target="#dltUserModel_<?php echo $productID;; ?>" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                                         <!-- /.modal-Start -->
-                                        <div class="modal fade" id="dltUserModel">
+                                        <div class="modal fade" id="dltUserModel_<?php echo $productID;; ?>">
                                             <div class="modal-dialog">
                                                 <div class="modal-content bg-light">
                                                     <div class="modal-body">

@@ -5,7 +5,7 @@
 <div class="main-Content">
     <!-- content will start here.. -->
 
-    <form action="<?php echo URLROOT; ?>/products/addProduct" method="POST">
+    <form action="<?php echo URLROOT; ?>/products_controller/addProduct" method="POST" enctype="multipart/form-data">
         <div class="card card-primary">
             <div class="card-header">
                 <h3 class="card-title">ADD Product</h3>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group">
                     <label for="image">Image</label>
-                    <input type="text" class="form-control" id="image" name="image" placeholder="Enter Image">
+                    <input type="file" class="form-control" id="image" name="productImg" accept="image/*">
                 </div>
 
 

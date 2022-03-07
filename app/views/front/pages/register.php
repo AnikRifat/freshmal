@@ -12,7 +12,7 @@
                         } ?>
                     </div>
 
-                    <form action="<?php echo URLROOT; ?>/users/register" method="POST">
+                    <form action="<?php echo URLROOT; ?>/Users_controller/register" method="POST">
                         <div class="input__field">
                             <input type="text" name="name" placeholder="Your Name" value="<?php echo $data['name']; ?>">
 
@@ -32,7 +32,7 @@
                         <div class="login__action ul_li_between mt-30">
 
                             <span class="forgot__login">
-                                <span>Already have an accout<a href="<?php echo URLROOT; ?>/users/login">Login</a></span>
+                                <span>Already have an accout<a href="<?php echo URLROOT; ?>/Users_controller/login">Login</a></span>
                             </span>
                         </div>
                     </form>

@@ -70,6 +70,7 @@ class Users_controller extends Controller
                 'confirm_password' => trim($_POST['confirm_password']),
                 'register_error' => ''
             ];
+            $emailData = verifyEmail($data['email']);
 
             if (empty($data['email']) || empty($data['password']) || empty($data['name'])) {
                 $data['register_error'] = 'plaease enter the field';
@@ -81,13 +82,14 @@ class Users_controller extends Controller
                 } else {
                     if ($data['password'] == $data['confirm_password']) {
                         $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
-
-                        if ($this->userModel->register($data)) {
-                            flash('register_success', 'uou are login');
-                            redirect('users/login');
-
-                            // $data['register_success'] = "Registerd!  Now Please Login";
-                            // $this->view('front/pages/login', $data);
+                        if ($emailData['status'] == true) {
+                            if ($this->userModel->register($data)) {
+                                flash('register_success', 'uou are login');
+                                redirect('Users_controller/login');
+                            }
+                        } else {
+                            $data['register_error'] = 'Emmail not Valid';
+                            $this->view('front/pages/register', $data);
                         }
                     } else {
                         $data['register_error'] = 'Confirm Password Does not matched';
@@ -132,7 +134,7 @@ class Users_controller extends Controller
         unset($_SESSION['email']);
         unset($_SESSION['name']);
         session_destroy();
-        redirect('users/login');
+        redirect('Users_controllerlogin');
     }
     public function dltUser()
     {
@@ -145,7 +147,7 @@ class Users_controller extends Controller
             ];
             // die($data['id']);
             if ($this->userModel->dltData($data['id'])) {
-                redirect('users/viewUser');
+                redirect('Users_controllerviewUser');
             }
         }
     }
@@ -163,7 +165,7 @@ class Users_controller extends Controller
             ];
             // die(print_r($data));
             if ($this->userModel->editData($data)) {
-                redirect('users/viewUser');
+                redirect('Users_controller/viewUser');
             }
         }
     }

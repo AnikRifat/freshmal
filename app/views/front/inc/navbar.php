@@ -31,7 +31,7 @@
                <button class="icon icon--cart cart-trigger">
                  <span>($78.00)</span>
                  <i class="far fa-shopping-bag"></i>
-                 <sup>8</sup>
+                 <sup class="subitem"></sup>
                </button>
                <a class="icon icon--wishlist" href="#!">
                  <i class="far fa-heart"></i>
@@ -64,7 +64,7 @@
                    </a>
 
                    <div class="dropdown-divider"></div>
-                   <a href="<?php echo URLROOT; ?>/users/logout" class="dropdown-item notify-item">
+                   <a href="<?php echo URLROOT; ?>/Users_controller/logout" class="dropdown-item notify-item">
                      <i class="fe-log-out"></i>
                      <span>Logout</span>
                    </a>
@@ -72,13 +72,13 @@
                  </div>
                <?php else : ?>
                  <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
-                   <a href="<?php echo URLROOT; ?>/users/login" class="dropdown-item notify-item">
+                   <a href="<?php echo URLROOT; ?>/Users_controller/login" class="dropdown-item notify-item">
                      <i class="fe-user"></i>
                      <span>Login</span>
                    </a>
 
                    <div class="dropdown-divider"></div>
-                   <a href="<?php echo URLROOT; ?>/users/register" class="dropdown-item notify-item">
+                   <a href="<?php echo URLROOT; ?>/Users_controller/register" class="dropdown-item notify-item">
                      <i class="fe-log-out"></i>
                      <span>Register</span>
                    </a>
@@ -113,7 +113,7 @@
 
          </div>
          <div class="cart-bar__subtotal d-flex align-items-center justify-content-between">
-           <span>Sub Total:</span>
+           <span>Sub Total: $<span class="subtotal"></span></span>
            <span class="total"></span>
          </div>
          <div class="btns d-flex align-items-center justify-content-center">

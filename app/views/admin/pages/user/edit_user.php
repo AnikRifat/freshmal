@@ -6,7 +6,7 @@ $user = $data['row'];
 <div class="main-Content">
     <!-- content will start here.. -->
 
-    <form action="<?php echo URLROOT; ?>/users/editUser" method="POST">
+    <form action="<?php echo URLROOT; ?>/Users_controller/editUser" method="POST">
         <div class="card card-primary">
             <div class="card-header">
                 <h3 class="card-title">Quick Example</h3>

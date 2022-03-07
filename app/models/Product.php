@@ -53,7 +53,7 @@ class Product
     }
     public function dltData($id)
     {
-        $this->db->query('UPDATE users SET status= 0 WHERE id = :id');;
+        $this->db->query('UPDATE products SET status= 0 WHERE id = :id');;
         $this->db->bind(':id', $id);
         $result  = $this->db->execute();
         // die($row->role);

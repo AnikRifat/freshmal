@@ -20,34 +20,70 @@ class Products_controller extends Controller
     }
     public function addProduct()
     {
+
+
+        // $imageName = $_FILES['img']['name'];
+        // $tempImageName = $_FILES['img']['temp_name'];
+        // $uploc = IMGROOT . $imageName;
+        $_POST = filter_input_array(INPUT_POST);
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            // die('submitted');
-            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+            $fileName = "";
+            $path = IMGROOT;
+            $upLoc = "";
+            // die(($_FILES['productImg']['tmp_name']));
+
+            if (($_FILES['productImg'])) {
+                // die($_SERVER['DOCUMENT_ROOT']);
+                $info = $_FILES['productImg']['name'];
+                // die(var_dump($info));
+                $fileName =  uniqid() . $info;
+                $temp_loc = $_FILES['productImg']['tmp_name'];
+                // die($temp_loc);
+
+                $upLoc = $_SERVER['DOCUMENT_ROOT'] . '/freshmal/public/img/' . $fileName;
+                // die($upLoc);
+            } else {
+                $fileName = $path . 'avatar.jpg';
+            }
             $data = [
                 'title' => trim($_POST['title']),
                 'pid' => trim($_POST['pid']),
                 'price' => trim($_POST['price']),
                 'unit' => trim($_POST['unit']),
-                'image' => trim($_POST['image']),
+                'image' => trim($path . $fileName)
             ];
             // die(print_r($data));
-            if ($this->productsModel->addProduct($data))
+            if ($this->productsModel->addProduct($data)) {
+
+                move_uploaded_file($temp_loc, $upLoc);
                 flash('added', 'products added');
-            redirect('pages/addProductPage');
+                redirect('pages/addProductPage');
+            } else {
+                die($data);
+            }
         }
     }
     public function dltProduct()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // die('submitted');
+
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
             $data = [
-                'id' => $_POST['id']
-
+                'id' => $_POST['idF'],
             ];
+            // die($_POST['idF']);
             // die($data['id']);
             if ($this->productsModel->dltData($data['id'])) {
-                redirect('users/viewUser');
+                // die('success');
+                redirect('pages/viewProductPage');
+                // $this->view('admin/pages/product/index', $data);
+            } else {
+                die('error');
+                redirect('pages/viewProductPage');
+
+                // $msg = "err";
+                // $this->view('admin/pages/product/index', $data);
             }
         }
     }
@@ -65,7 +101,7 @@ class Products_controller extends Controller
             ];
             // die(print_r($data));
             if ($this->productsModel->editData($data)) {
-                redirect('users/viewUser');
+                redirect('Users_controller/viewUser');
             }
         }
     }

@@ -11,7 +11,7 @@
                         ?>
                     </div>
 
-                    <form action="<?php echo URLROOT; ?>/users/login" method="POST">
+                    <form action="<?php echo URLROOT; ?>/Users_controller/login" method="POST">
                         <div class="input__field">
                             <input name="email" type="email" placeholder="Your Email" value="<?php echo $data['email']; ?>">
                         </div>
@@ -24,7 +24,7 @@
                                 <a href="#!">Forget Password</a>
                             </span>
                             <span class="forgot__login">
-                                <span>Don't have account?<a href="<?php echo URLROOT; ?>/users/register">Create Account</a></span>
+                                <span>Don't have account?<a href="<?php echo URLROOT; ?>/Users_controller/register">Create Account</a></span>
                             </span>
                         </div>
                     </form>
